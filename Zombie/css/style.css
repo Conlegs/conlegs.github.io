@@ -1,0 +1,37 @@
+* {
+    margin: 0 auto;
+}
+body {
+    background-color: black;
+}
+
+#score {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.wrap {
+    position: relative;
+}
+
+#zombie {
+    position: fixed;
+    top: 10%;
+    left: 20%;
+}
+
+#zombieTwo {
+    position: fixed;
+    top: 10%;
+    left: 70%;
+}
+
+#endGame {
+    position: absolute;
+    left: 47%;
+    bottom: 5%;
+    width: 150px;
+}
