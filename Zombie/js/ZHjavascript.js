@@ -12,11 +12,11 @@ function moveZombie(zombies){
 }
 
 function showExplosion(zombies){
-    zombies.src = "../images/explosion.gif";
+    zombies.src = "images/explosion.gif";
 }
 
 function changeBackToZombie(zombies){
-    zombies.src = "../images/zombie.png";
+    zombies.src = "images/zombie.png";
 }
 
 let snd = new Audio("sounds/death.wav");
