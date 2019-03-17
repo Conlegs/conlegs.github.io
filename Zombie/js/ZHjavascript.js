@@ -2,8 +2,8 @@ let zombie = document.getElementById('zombie');
 let zombieTwo = document.getElementById('zombieTwo');
 
 function moveZombie(zombies){
-    let w = document.documentElement.clientWidth- 200; // 1910
-    let h = document.documentElement.clientHeight - 200; // 1104
+    let w = document.documentElement.clientWidth- 200;
+    let h = document.documentElement.clientHeight - 200;
     zombies.style.position = "absolute";
     let x = Math.floor((Math.random() * w));
     let y = Math.floor((Math.random() * h));
@@ -12,14 +12,14 @@ function moveZombie(zombies){
 }
 
 function showExplosion(zombies){
-    zombies.src = "kwonyongju.github.io/Zombie/images/explosion.gif";
+    zombies.src = "images/explosion.gif";
 }
 
 function changeBackToZombie(zombies){
-    zombies.src = "kwonyongju.github.io/Zombie/images/zombie.png";
+    zombies.src = "images/zombie.png";
 }
 
-let snd = new Audio("/sounds/death.wav");
+let snd = new Audio("sounds/death.wav");
 
 setInterval(function(){
     setInterval(moveZombie(zombie), 1000);
