@@ -22,9 +22,14 @@ function changeBackToZombie(zombies){
 let snd = new Audio("sounds/death.wav");
 
 setInterval(function(){
-    setInterval(moveZombie(zombie), 1000);
-    setInterval(moveZombie(zombieTwo), 1000);
+    moveZombie(zombie);
 }, 2000);
+
+setTimeout(function(){
+    setInterval(function(){
+        moveZombie(zombieTwo);
+    }, 2000);
+}, 1000);
 
 function clickZombie(){
     snd.play();
@@ -33,10 +38,8 @@ function clickZombie(){
     setTimeout(function(){
         changeBackToZombie(zombie)
         moveZombie(zombie)
-    }, 700)
+    }, 500);
 }
-
-zombie.onclick = clickZombie;
 
 function clickZombieTwo(){
     snd.play();
@@ -45,9 +48,33 @@ function clickZombieTwo(){
     setTimeout(function(){
         changeBackToZombie(zombieTwo)
         moveZombie(zombieTwo)
-    }, 700)
+    }, 500);
 }
-zombieTwo.onclick = clickZombieTwo;
+
+let isClicked = false;
+function clickEvent(){
+    if(!isClicked){
+        isClicked = true;
+        clickZombie();
+        setTimeout(function(){
+            isClicked = false;
+        }, 500);
+    }
+}
+
+let isClickedTwo = false;
+function clickEventTwo(){
+    if(!isClickedTwo){
+        isClickedTwo = true;
+        clickZombieTwo();
+        setTimeout(function(){
+            isClickedTwo = false;
+        }, 500);
+    }
+}
+
+zombie.onclick = clickEvent;
+zombieTwo.onclick = clickEventTwo;
 
 let count = 0;
 function displayScore(){
