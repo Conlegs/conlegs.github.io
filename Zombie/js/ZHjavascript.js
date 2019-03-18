@@ -38,7 +38,7 @@ function clickZombie(){
     setTimeout(function(){
         changeBackToZombie(zombie)
         moveZombie(zombie)
-    }, 500);
+    }, 1300);
 }
 
 function clickZombieTwo(){
@@ -48,7 +48,7 @@ function clickZombieTwo(){
     setTimeout(function(){
         changeBackToZombie(zombieTwo)
         moveZombie(zombieTwo)
-    }, 500);
+    }, 1300);
 }
 
 let isClicked = false;
