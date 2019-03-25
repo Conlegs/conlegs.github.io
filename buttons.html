@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function makeButtons(number){
+            for (let i = 65; i < 65 + number; i++){
+                let btn = document.createElement("button");
+                document.body.appendChild(btn);
+                btn.innerHTML = String.fromCharCode(i);
+                btn.addEventListener("click", function(){
+                    console.log("Button " + String.fromCharCode(i) + " was clicked.")
+                })
+            }
+        }
+        userNum = prompt("How many buttons do you want to make?")
+        makeButtons(parseInt(userNum));
+    </script>
+</body>
+</html>
