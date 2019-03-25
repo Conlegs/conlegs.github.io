@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        p {
+            padding: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            display: block;                                 
+        }
+
+        #header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #header_nav {
+            width: 100%;
+            height: 45px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        #header_nav ul {
+            overflow: hidden;
+            
+        }
+
+        #header_nav ul li {
+            float: left;
+            list-style: none;
+            padding: 15px;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        #contents {
+            text-align: center;
+            position: fixed;
+            top: 60px;
+            width: 50%;
+            left:25%; 
+        }
+
+        a:hover {
+            border: 1px dotted black;
+        }
+
+        #comp1536 {
+            background-color:salmon
+        }
+
+        #comp1510 {
+            background-color:powderblue;
+        }
+
+        #comp1930 {
+            background-color:peru
+        }
+
+        #comm1116 {
+            background-color:darkslategrey;
+            color: white;
+        }
+
+        #comp1110 {
+            background-color:seagreen;
+            color: white;
+        }
+
+        #comp1113 {
+            background-color:slategray;
+            color: white;
+        }
+
+        #comp1712 {
+            background-color:steelblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+            <div id="header_nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_me.html">ABOUT ME</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                </ul>
+            </div>
+    </div>
+    <div id="contents">
+        <h1>Summary of myself</h1>
+        <p>My name is Yongju Kwon <br/> I'm studying Computer Systems Technology at BCIT</p>
+
+        <img src="images/boy.png" alt="Picture of Yongju Kwon" width="200px">
+
+        <h2>The link to 'resume.html'</h2>
+        <input type="button" onclick="location.href='resume.html'" value="Go to Resume" />
+        <br />
+
+        <h2>The link to download my resume</h2>
+        <form method="get" action="Resume.pdf">
+                <button type="submit">Download!</button>
+             </form>
+        <br />
+        <br />
+    </div>
+</body>
+</html>

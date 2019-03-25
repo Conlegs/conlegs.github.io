@@ -3,9 +3,47 @@
 <head>
     <title>index</title>
     <style>
-        div {
-            margin: 10px 0;
+        * {
+            margin: 0 auto;
         }
+
+        body {
+            position: relative;
+        }
+
+        #header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #header_nav {
+            width: 100%;
+            height: 45px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        #header_nav ul {
+            overflow: hidden;
+        }
+
+        #header_nav ul li {
+            float: left;
+            list-style: none;
+            padding: 15px;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        #contents {
+            text-align: center;
+            position: fixed;
+            top: 60px;
+            left: 35%;
+        }
+
         h2 {
             font-weight: bold;
             font-size: 1.3em;
@@ -24,104 +62,19 @@
         a:hover {
             border: 1px dotted black;
         }
-
-        #comp1536 {
-            background-color:salmon
-        }
-
-        #comp1510 {
-            background-color:powderblue;
-        }
-
-        #comp1930 {
-            background-color:peru
-        }
-
-        #comm1116 {
-            background-color:darkslategrey;
-            color: white;
-        }
-
-        #comp1110 {
-            background-color:seagreen;
-            color: white;
-        }
-
-        #comp1113 {
-            background-color:slategray;
-            color: white;
-        }
-
-        #comp1712 {
-            background-color:steelblue;
-            color: white;
-        }
     </style>
 </head>
 <body>
-    <center>
-        <h1>Summary of myself</h1>
-        <p>My name is Yongju Kwon <br/> I'm studying Computer Systems Technology at BCIT</p>
-
-        <img src="images/boy.png" alt="Picture of Yongju Kwon" width="200px">
-
-        <h2>The courses I am taking at BCIT</h2>
-        <p>(If you click the links below, you will get to the course outline of each course)</p>
-
-            <div id="comp1536">
-                <a href="https://www.bcit.ca/study/outlines/20191086129">
-                    <h2>COMP 1536 Intro to Web Development</h2>
-                    <p>This course is a web design and programming course with an emphasis on good planning, interface design, multimedia, client-side scripting with JavaScript, server-side scripting, and best practices.</p>
-                </a>
-                
-            </div>
-            <div id="comp1510">
-                <a href="https://www.bcit.ca/study/outlines/20191086126">
-                    <h2>COMP 1510 Programming Methods</h2>
-                    <p>This course introduces the fundamental concepts of programming including design, development, testing, debugging simple programs, as well as error-handling, and problem solving.</p>
-                </a>
-            </div>
-            <div id="comp1930">
-                <a href="https://www.bcit.ca/study/outlines/20191086134">
-                    <h2>COMP 1930 Projects 1 </h2>
-                    <p>Students learn to work in a collaborative environment and complete a small-scale software project: a web app. Design and managing of implementation concepts will be introduced: User Experience Design (XSD) and Agile methodology. The course takes students through the UX design process which includes creating and administering surveys & interviews, creating personas and user stories, designing wireframes, and performing user tests with a developed implementation that is based on the UX design process</p>
-                </a>    
-            </div>
-            <div id="comm1116">
-                <a href="https://www.bcit.ca/study/outlines/20191086120">
-                    <h2>COMM 1116 Business Communications 1</h2>
-                    <p>Information technology professionals spend time each day communicating orally and in writing with their supervisors, colleagues and clients. As problem-solvers and entrepreneurs in industry, you need to communicate quickly, clearly, and effectively. This course will teach you how to be a professional and efficient communicator at work. </p>
-                </a>
-            </div>
-            <div id="comp1110">
-                <a href="https://www.bcit.ca/study/outlines/20191086121">
-                    <h2>COMP 1110 CST Program Fundamentals</h2>
-                    <p>The course covers topics of importance to new and continuing students on how to balance school and related activities to enhance chances of success in their academic careers. In this course students will learn a variety of different techniques to improve study habits, note taking, and time management skills. The class will also present other topics of interest to CST students and will introduce students to various support systems at BCIT.</p>
-                </a>
-            </div>
-            <div id="comp1113">
-                <a href="https://www.bcit.ca/study/outlines/20191048068">
-                    <h2>COMP 1113 Applied Mathmatics</h2>
-                    <p>Comp 1113 is partially discrete mathematics, partially an introduction to linear equations. The purpose of this course is to give a strong foundation for future technical and programming courses. The course is divided into three parts: (1) Boolean algebra and design of logic circuits; (2) number systems and data representation; and (3) functions, linear equations, vectors and matrices.</p>
-                </a>
-            </div>
-            <div id="comp1712">
-                <a href="https://www.bcit.ca/study/outlines/20191086130">
-                   <h2> COMP 1712 Business Analysis and System Design</h2>
-                    <p>Business Analysis and Systems Design is the study of concepts, processes and tools that professionals use to plan and develop information systems to industry standards. Students learn how to ask implicit questions, to create and document communication plans and to make better decisions prior to creating a software system.</p>
-                </a>
-            </div>
-           
-
-        <h2>The link to 'resume.html'</h2>
-        <a href="resume.html">This is the link to 'resume.html'</a>
-        <br />
-
-        <h2>The link to download my resume</h2>
-        <a href="Resume.pdf" download>This is the download link to 'resume.pdf'</a>
-        <br />
-        <br />
-
+    <div id="header">
+        <div id="header_nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about_me.html">ABOUT ME</a></li>
+                <li><a href="course.html">COURSES</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contents">
         <h2>The link to BCIT web page</h2>
         <p>(If you click the image below, you will get to BCIT's web page automatically)</p>
         <a href="http://www.bcit.ca"><img src="images/school.png" alt="Image of School linked to BCIT web page" width="200px"></a>
@@ -129,6 +82,6 @@
         <h2>The link to cartoon about computer science</h2>
         <p>(If you click the image below, you will get to CartoonStock web page)</p>
         <a href="https://www.cartoonstock.com/directory/c/computer_science.asp"><img src="images/smile.png" alt="Image of smile face linked to CartoonStock web page" width="200px"></a>
-    </center>
+    </div>
 </body>
 </html>
