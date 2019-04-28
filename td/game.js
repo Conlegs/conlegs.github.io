@@ -28,8 +28,9 @@ class Game {
         this.cnv = document.createElement("canvas");
         if(!this.cnv || !this.cnv.getContext)
             throw "No valid canvas found!";
-        this.cnv.width = 900;
-        this.cnv.height = 750;
+        this.cnv.width = window.innerWidth * 0.6;
+        this.cnv.height = window.innerHeight * 0.4;
+        this.cnv.style.border = "2px solid blue";
         document.getElementById("canDiv").appendChild(this.cnv);
         this.context = this.cnv.getContext("2d");
         if(!this.context)
