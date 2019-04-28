@@ -9,17 +9,20 @@
 <body>
     <script>
         function makeButtons(number){
-            for (let i = 65; i < 65 + number; i++){
-                let btn = document.createElement("button");
-                document.body.appendChild(btn);
-                btn.innerHTML = String.fromCharCode(i);
-                btn.addEventListener("click", function(){
-                    console.log("Button " + String.fromCharCode(i) + " was clicked.")
-                })
-            }
+                for (let i = 65; i < 65 + number; i++){
+                    let btn = document.createElement("button");
+                    document.body.appendChild(btn);
+                    btn.innerHTML = String.fromCharCode(i);
+                    btn.addEventListener("click", function(){
+                        console.log("Button " + String.fromCharCode(i) + " was clicked.")
+                    })
+                }
+            
         }
         userNum = prompt("How many buttons do you want to make?")
         makeButtons(parseInt(userNum));
+
+
     </script>
 </body>
 </html>
